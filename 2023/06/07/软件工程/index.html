@@ -1,0 +1,513 @@
+<!DOCTYPE html><html lang="zh-Hans" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>软件工程 | donn的博客</title><meta name="author" content="donn"><meta name="copyright" content="donn"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="软件工程Chapter1 Introduction软件工程学科产生的背景：软件危机：从结果来看，软件危机体现在： 软件质量差、可靠性难以保证 成本难以控制 开发进度难以把握 可维护性较差  从原因来看，软件危机由以下两点导致： 不断增长的系统复杂性 未有效采用软件工程方法进行开发  Frequently asked questions about software engineering   Qu">
+<meta property="og:type" content="article">
+<meta property="og:title" content="软件工程">
+<meta property="og:url" content="https://tangjiayang.github.io/2023/06/07/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/index.html">
+<meta property="og:site_name" content="donn的博客">
+<meta property="og:description" content="软件工程Chapter1 Introduction软件工程学科产生的背景：软件危机：从结果来看，软件危机体现在： 软件质量差、可靠性难以保证 成本难以控制 开发进度难以把握 可维护性较差  从原因来看，软件危机由以下两点导致： 不断增长的系统复杂性 未有效采用软件工程方法进行开发  Frequently asked questions about software engineering   Qu">
+<meta property="og:locale">
+<meta property="og:image" content="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg">
+<meta property="article:published_time" content="2023-06-07T06:45:43.000Z">
+<meta property="article:modified_time" content="2023-06-14T12:17:00.202Z">
+<meta property="article:author" content="donn">
+<meta property="article:tag" content="软件工程">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://tangjiayang.github.io/2023/06/07/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: 'days',
+  dateSuffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: {"limitCount":30,"languages":{"author":"Author: donn","link":"Link: ","source":"Source: donn的博客","info":"Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source."}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '软件工程',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-06-14 20:17:00'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/./img/bg.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">11</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">10</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">7</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 链接</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="donn的博客"><span class="site-name">donn的博客</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 链接</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">软件工程</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2023-06-07T06:45:43.000Z" title="Created 2023-06-07 14:45:43">2023-06-07</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2023-06-14T12:17:00.202Z" title="Updated 2023-06-14 20:17:00">2023-06-14</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E5%9F%BA%E7%A1%80/">软件开发基础</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word count:</span><span class="word-count">5.4k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>16min</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="软件工程"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="软件工程"><a href="#软件工程" class="headerlink" title="软件工程"></a>软件工程</h1><h2 id="Chapter1-Introduction"><a href="#Chapter1-Introduction" class="headerlink" title="Chapter1 Introduction"></a>Chapter1 Introduction</h2><h3 id="软件工程学科产生的背景："><a href="#软件工程学科产生的背景：" class="headerlink" title="软件工程学科产生的背景："></a>软件工程学科产生的背景：</h3><h4 id="软件危机："><a href="#软件危机：" class="headerlink" title="软件危机："></a>软件危机：</h4><h5 id="从结果来看，软件危机体现在："><a href="#从结果来看，软件危机体现在：" class="headerlink" title="从结果来看，软件危机体现在："></a>从结果来看，软件危机体现在：</h5><ul>
+<li>软件质量差、可靠性难以保证</li>
+<li>成本难以控制</li>
+<li>开发进度难以把握</li>
+<li>可维护性较差</li>
+</ul>
+<h5 id="从原因来看，软件危机由以下两点导致："><a href="#从原因来看，软件危机由以下两点导致：" class="headerlink" title="从原因来看，软件危机由以下两点导致："></a>从原因来看，软件危机由以下两点导致：</h5><ol>
+<li>不断增长的系统复杂性</li>
+<li>未有效采用软件工程方法进行开发</li>
+</ol>
+<h3 id="Frequently-asked-questions-about-software-engineering"><a href="#Frequently-asked-questions-about-software-engineering" class="headerlink" title="Frequently asked questions about software engineering"></a><strong>Frequently asked questions about software engineering</strong></h3><table>
+<thead>
+<tr>
+<th><strong>Question</strong></th>
+<th><strong>Answer</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>What  is software?</td>
+<td><strong>Computer  programs</strong> and <strong>associated documentation</strong>. Software products may be developed for  a particular customer or may be developed for a general market.</td>
+</tr>
+<tr>
+<td>What  are the attributes of good software?</td>
+<td>Good  software should deliver the required functionality and performance to the  user and should be maintainable, dependable and usable.</td>
+</tr>
+<tr>
+<td>What  is software engineering?</td>
+<td>Software  engineering is an engineering discipline that is concerned with all aspects  of software production.</td>
+</tr>
+<tr>
+<td>What  are the fundamental software engineering activities?</td>
+<td>Software  specification(规范), software development, software validation(验证) and software  evolution(演进).</td>
+</tr>
+<tr>
+<td>What  is the difference between software engineering and computer science?</td>
+<td>Computer  science focuses on theory and fundamentals; software engineering is concerned  with the practicalities of developing and delivering useful software.</td>
+</tr>
+<tr>
+<td>What  is the difference between software engineering and system engineering?</td>
+<td>System  engineering is concerned with all aspects of computer-based systems  development including hardware, software and process engineering. Software  engineering is part of this more general process.</td>
+</tr>
+<tr>
+<td>What are the key challenges facing  software engineering?</td>
+<td>Coping with increasing diversity,  demands for reduced delivery times and developing trustworthy software.</td>
+</tr>
+<tr>
+<td>What  are the costs of software engineering?</td>
+<td>Roughly  60% of software costs are development costs, 40% are testing costs. For  custom software, evolution costs often exceed development costs.</td>
+</tr>
+<tr>
+<td>What  are the best software engineering techniques and methods?</td>
+<td>While  all software projects have to be professionally managed and developed,  <strong>different techniques are appropriate for different types of system</strong>. For  example, games should always be developed using a series of prototypes  whereas safety critical control systems require a complete and analyzable  specification to be developed. You can’t, therefore, say that one method is  better than another.</td>
+</tr>
+</tbody></table>
+<h3 id="好的软件的基本属性"><a href="#好的软件的基本属性" class="headerlink" title="好的软件的基本属性"></a>好的软件的基本属性</h3><ul>
+<li>可接受性(满足用户的需求，用户能用，好用)</li>
+<li>可依赖性和信息安全性</li>
+<li>效率高</li>
+<li>可维护性</li>
+</ul>
+<h3 id="软件过程——四项基本活动"><a href="#软件过程——四项基本活动" class="headerlink" title="软件过程——四项基本活动"></a>软件过程——四项基本活动</h3><ol>
+<li><strong>软件规格说明</strong>（like 需求分析</li>
+<li><strong>软件开发</strong></li>
+<li><strong>软件确认</strong>（like 验收</li>
+<li><strong>软件演化</strong>（like 维护</li>
+</ol>
+<h2 id="Chapter2-软件过程"><a href="#Chapter2-软件过程" class="headerlink" title="Chapter2 软件过程"></a>Chapter2 软件过程</h2><h3 id="2-1软件过程模型"><a href="#2-1软件过程模型" class="headerlink" title="2.1软件过程模型"></a>2.1软件过程模型</h3><h4 id="瀑布模型："><a href="#瀑布模型：" class="headerlink" title="瀑布模型："></a>瀑布模型：</h4><p>​	如果每阶段做的事是正确的，就能保证最终结果的正确</p>
+<p>​	系统需求&lt;&#x3D;&gt;软件需求&lt;&#x3D;&gt;需求分析&lt;&#x3D;&gt;设计&lt;&#x3D;&gt;编码&lt;&#x3D;&gt;测试&lt;&#x3D;&gt;运行</p>
+<h5 id="瀑布模型的优点："><a href="#瀑布模型的优点：" class="headerlink" title="瀑布模型的优点："></a>瀑布模型的优点：</h5><p>虽然瀑布模型是一个比较 “老”的。甚至过时的开发模型，但其优点为：</p>
+<ul>
+<li><p>在决定系统怎样做之前，存在一个需求阶段。<strong>鼓励对系统“做什么” 进行规约</strong>（即设计之前的规约）。</p>
+</li>
+<li><p>在建造构件之前。存在一个设计阶段，<strong>鼓励规划系统结构</strong>（即编码之前的设计）。</p>
+</li>
+<li><p><u>在每一阶段结束时进行复审，允许获取方和用户的参与。</u></p>
+</li>
+<li><p>前一步工作产品可作为下一步被认可的。文档化的基线。允许基线和配置早期接受控制。</p>
+</li>
+</ul>
+<h5 id="瀑布模型的缺点："><a href="#瀑布模型的缺点：" class="headerlink" title="瀑布模型的缺点："></a>瀑布模型的缺点：</h5><p>瀑布模型下，客户和开发者可能会过早地冻结了需求，这样的话后续就不能发生进一步的变化(除非返工)</p>
+<ul>
+<li><p>客户<u>必须能够完整、正确和清晰地表达他们的需求</u>：开发人员一开始就必须理解需求。</p>
+</li>
+<li><p>缺乏灵活性。一旦软件需求存在偏差，就会导致开发出的软件产品不能满足用户的实际要求(需要返工)。</p>
+</li>
+<li><p>在一个项目的早期阶段，过分地强调了基线和里程碑处的文档,可能要花费更多的时间，用于建立一些用处不大的文档。</p>
+</li>
+<li><p>直到项目结束之前，都不能演示系统的能力,增加了项目的风险。</p>
+</li>
+</ul>
+<h4 id="增量模型："><a href="#增量模型：" class="headerlink" title="增量模型："></a>增量模型：</h4><p>​	该模型有一个假设：假设需求可以分段，成为一系列增量产品，每一增量可以分别地开发。</p>
+<p>系统开发体现为一系列的版本(增量)，每个版本在前一版本的基础上增加一些功能。</p>
+<h5 id="增量模型的优点："><a href="#增量模型的优点：" class="headerlink" title="增量模型的优点："></a>增量模型的优点：</h5><p>作为瀑布模型的第一个变体，具有瀑布模型的所有优点。</p>
+<p>此外，它还有以下优点：</p>
+<ul>
+<li><p>更容易获得用户的反馈</p>
+</li>
+<li><p>第一个可交付版本所需要的成本和时间是很少的：</p>
+</li>
+<li><p>开发由增量表示的小系统所承担的风险是不大的：</p>
+</li>
+<li><p>由于很快发布了第一个版本，因此可以减少用户需求的变更：</p>
+</li>
+<li><p>允许增量投资，即在项目开始时，可以仅对一个或两个增量投资。</p>
+</li>
+</ul>
+<p>注：如果采用增量投资方式，那么客户就可以对一些增量进行招标。</p>
+<p>然后，开发人员按提出的截止期限进行增量开发，这样客户就可以用多个契约来管理组织的资源和成本。</p>
+<h5 id="增量模型的缺点："><a href="#增量模型的缺点：" class="headerlink" title="增量模型的缺点："></a>增量模型的缺点：</h5><p>如果增量模型不适于某些项目，或使用有误，则有以下缺点：</p>
+<ul>
+<li><p>﻿如果没有对用户的变更要求进行规划，那么产生的初始增量可能会造成后来增量的不稳定；</p>
+</li>
+<li><p>﻿如果需求不像早期思考的那样稳定和完整，那么一些增量就可能需要重新开发(返工)，重新发布：</p>
+</li>
+<li><p>管理发生的成本、进度和配置的复杂性，可能会超出一些组织的能力。</p>
+</li>
+<li><p>过程不可见：管理者需要定期交付成果来衡量进度。如果系统开发迅速，则生成反映系统每个版本的文档并不具有成本效益。</p>
+</li>
+</ul>
+<h4 id="集成和配置："><a href="#集成和配置：" class="headerlink" title="集成和配置："></a>集成和配置：</h4><p>​	该方法依赖于可复用的构件或系统。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Tangjiayang/picodemo/img/image-20230610130513298.png" alt="image-20230610130513298"></p>
+<h4 id="演化模型："><a href="#演化模型：" class="headerlink" title="演化模型："></a>演化模型：</h4><p>（针对一开始不能明确需求的情况：</p>
+<p>是一种有弹性的过程模式，由一些小的开发步组成，每一步都历经<strong>需求分析、设计、实现和验证</strong></p>
+<h4 id="喷泉模型："><a href="#喷泉模型：" class="headerlink" title="喷泉模型："></a>喷泉模型：</h4><p>​	特征：<strong>迭代、无缝</strong></p>
+<h2 id="chapter1-软件工程概论"><a href="#chapter1-软件工程概论" class="headerlink" title="chapter1 软件工程概论"></a>chapter1 软件工程概论</h2><h3 id="1-1-软件的定义及特点"><a href="#1-1-软件的定义及特点" class="headerlink" title="1.1 软件的定义及特点"></a>1.1 软件的定义及特点</h3><h3 id="1-2-软件工程的起源和概念"><a href="#1-2-软件工程的起源和概念" class="headerlink" title="1.2 软件工程的起源和概念"></a>1.2 软件工程的起源和概念</h3><h3 id="1-3-软件开发的本质和基本手段"><a href="#1-3-软件开发的本质和基本手段" class="headerlink" title="1.3 软件开发的本质和基本手段"></a>1.3 软件开发的本质和基本手段</h3><h3 id="1-4-软件工程框架"><a href="#1-4-软件工程框架" class="headerlink" title="1.4 软件工程框架"></a>1.4 软件工程框架</h3><h2 id="chapter2-软件过程"><a href="#chapter2-软件过程" class="headerlink" title="chapter2 软件过程"></a>chapter2 软件过程</h2><h3 id="2-1软件生存周期过程的概念"><a href="#2-1软件生存周期过程的概念" class="headerlink" title="2.1软件生存周期过程的概念"></a>2.1软件生存周期过程的概念</h3><h3 id="2-2软件生存周期过程的分类"><a href="#2-2软件生存周期过程的分类" class="headerlink" title="2.2软件生存周期过程的分类"></a>2.2软件生存周期过程的分类</h3><h3 id="2-3软件生存周期模型的概念"><a href="#2-3软件生存周期模型的概念" class="headerlink" title="2.3软件生存周期模型的概念"></a>2.3软件生存周期模型的概念</h3><h3 id="2-4常见的软件生存周期模型"><a href="#2-4常见的软件生存周期模型" class="headerlink" title="2.4常见的软件生存周期模型"></a>2.4常见的软件生存周期模型</h3><h4 id="瀑布模型：-1"><a href="#瀑布模型：-1" class="headerlink" title="瀑布模型："></a>瀑布模型：</h4><p>​	如果每阶段做的事是正确的，就能保证最终结果的正确</p>
+<p>​	系统需求&lt;&#x3D;&gt;软件需求&lt;&#x3D;&gt;需求分析&lt;&#x3D;&gt;设计&lt;&#x3D;&gt;编码&lt;&#x3D;&gt;测试&lt;&#x3D;&gt;运行</p>
+<h5 id="瀑布模型的优点：-1"><a href="#瀑布模型的优点：-1" class="headerlink" title="瀑布模型的优点："></a>瀑布模型的优点：</h5><p>虽然瀑布模型是一个比较 “老”的。甚至过时的开发模型，但其优点为：</p>
+<ul>
+<li><p>在决定系统怎样做之前，存在一个需求阶段。<strong>鼓励对系统“做什么” 进行规约</strong>（即设计之前的规约）。</p>
+</li>
+<li><p>在建造构件之前。存在一个设计阶段，<strong>鼓励规划系统结构</strong>（即编码之前的设计）。</p>
+</li>
+<li><p><u>在每一阶段结束时进行复审，允许获取方和用户的参与。</u></p>
+</li>
+<li><p>前一步工作产品可作为下一步被认可的。文档化的基线。允许基线和配置早期接受控制。</p>
+</li>
+</ul>
+<h5 id="瀑布模型的缺点：-1"><a href="#瀑布模型的缺点：-1" class="headerlink" title="瀑布模型的缺点："></a>瀑布模型的缺点：</h5><ul>
+<li><p>客户<u>必须能够完整、正确和清晰地表达他们的需求</u>：开发人员一开始就必须理解需求。</p>
+</li>
+<li><p>缺乏灵活性。一旦软件需求存在偏差，就会导致开发出的软件产品不能满足用户的实际要求。</p>
+</li>
+<li><p>在一个项目的早期阶段，过分地强调了基线和里程碑处的文档,可能要花费更多的时间，用于建立一些用处不大的文档。</p>
+</li>
+<li><p>直到项目结束之前，都不能演示系统的能力,增加了项目的风险。</p>
+</li>
+</ul>
+<h4 id="增量模型：-1"><a href="#增量模型：-1" class="headerlink" title="增量模型："></a>增量模型：</h4><p>​	该模型有一个假设：假设需求可以分段，成为一系列增量产品，每一增量可以分别地开发。</p>
+<h5 id="增量模型的优点：-1"><a href="#增量模型的优点：-1" class="headerlink" title="增量模型的优点："></a>增量模型的优点：</h5><p>作为瀑布模型的第一个变体，具有瀑布模型的所有优点。</p>
+<p>此外，它还有以下优点：</p>
+<ul>
+<li><p>第一个可交付版本所需要的成本和时间是很少的：</p>
+</li>
+<li><p>开发由增量表示的小系统所承担的风险是不大的：</p>
+</li>
+<li><p>由于很快发布了第一个版本，因此可以减少用户需求的变更：</p>
+</li>
+<li><p>允许增量投资，即在项目开始时，可以仅对一个或两个增量投资。</p>
+</li>
+</ul>
+<p>注：如果采用增量投资方式，那么客户就可以对一些增量进行招标。</p>
+<p>然后，开发人员按提出的截止期限进行增量开发，这样客户就可以用多个契约来管理组织的资源和成本。</p>
+<h5 id="增量模型的缺点：-1"><a href="#增量模型的缺点：-1" class="headerlink" title="增量模型的缺点："></a>增量模型的缺点：</h5><p>如果增量模型不适于某些项目，或使用有误，则有以下缺点：</p>
+<ul>
+<li><p>﻿如果没有对用户的变更要求进行规划，那么产生的初始增量可能会造成后来增量的不稳定；</p>
+</li>
+<li><p>﻿如果需求不像早期思考的那样稳定和完整，那么一些增量就可能需要重新开发，重新发布：</p>
+</li>
+<li><p>管理发生的成本、进度和配置的复杂性，可能会超出一些组织的能力。</p>
+</li>
+</ul>
+<h4 id="演化模型：-1"><a href="#演化模型：-1" class="headerlink" title="演化模型："></a>演化模型：</h4><p>（针对一开始不能明确需求的情况：</p>
+<p>是一种有弹性的过程模式，由一些小的开发步组成，每一步都历经<strong>需求分析、设计、实现和验证</strong></p>
+<h4 id="喷泉模型：-1"><a href="#喷泉模型：-1" class="headerlink" title="喷泉模型："></a>喷泉模型：</h4><p>​	特征：<strong>迭代、无缝</strong></p>
+<h2 id="chapter3-软件需求与软件需求规约"><a href="#chapter3-软件需求与软件需求规约" class="headerlink" title="chapter3 软件需求与软件需求规约"></a>chapter3 软件需求与软件需求规约</h2><h3 id="3-1需求的作用"><a href="#3-1需求的作用" class="headerlink" title="3.1需求的作用"></a>3.1需求的作用</h3><p>​	软件开发的工作基础	</p>
+<h3 id="3-2需求的定义"><a href="#3-2需求的定义" class="headerlink" title="3.2需求的定义"></a>3.2需求的定义</h3><p>​	描述了待开发产品&#x2F;系统功能上的能力、性能参数或其他性质</p>
+<p>需求的基本性质：</p>
+<ul>
+<li>必要性				是要求的</li>
+<li>无歧义性            是否只能用一种方式来解释</li>
+<li>可测的 (测试)     能否进行测试，对一定的输入，会有相同的输出</li>
+<li>可跟踪的            从一个开发阶段到另一个阶段能否进行跟踪</li>
+<li>可测量的            能否测量</li>
+</ul>
+<h3 id="3-3需求的分类"><a href="#3-3需求的分类" class="headerlink" title="3.3需求的分类"></a>3.3需求的分类</h3><h4 id="功能需求："><a href="#功能需求：" class="headerlink" title="功能需求："></a>功能需求：</h4><ul>
+<li><p>关于该功能输入的所有假定，或为了验证该功能输入有关检测的假定。</p>
+</li>
+<li><p>﻿功能内的任一次序，这一次序是与外部有关的。</p>
+</li>
+<li><p>﻿对异常条件的响应，包括所有内外部所产生的错误。</p>
+</li>
+<li><p>﻿需求的时序或优先程度。</p>
+</li>
+<li><p>﻿功能之间的互斥规则。</p>
+</li>
+<li><p>﻿系统内部状态的假定。</p>
+</li>
+<li><p>为了该功能的执行，所需要的输入和输出次序。</p>
+</li>
+<li><p>用于转换或内部计算所需要的公式。</p>
+</li>
+</ul>
+<h4 id="性能需求："><a href="#性能需求：" class="headerlink" title="性能需求："></a>性能需求：</h4><p>​		规约了一个系统或系统构建必须具有的<strong>性能特性</strong>(速度、准确率、并发等要求)</p>
+<h4 id="外部接口需求："><a href="#外部接口需求：" class="headerlink" title="外部接口需求："></a>外部接口需求：</h4><p>​		外部接口需求 (External interface requirement) 规约了系统或系统构件必须与之交互的硬件、软件或数据库元素。它也可能规约其格式、时间或其他因素。</p>
+<ul>
+<li><p>系统接口 (Systeminterfaces)：描述一个应用如何与系统的其他应用进行交互。</p>
+</li>
+<li><p>用户接口 (User interfaces)：规约了软件产品和用户之间接口的逻辑特性。即规约对给用户所显示的数据，对用户所要求的数据以及用户如何控制该用户接口。</p>
+</li>
+<li><p>硬件接口 (Hardware interfaces)：如果软件系统必须与硬件设备进行交互，那么就应说明所要求的支持和协议类型。</p>
+</li>
+<li><p>软件接口 (Software interfaces)：允许与其它软件产品进行交互，如，数据管理系统、操作系统或数学软件包。</p>
+</li>
+<li><p>通讯接口 (Communications interfaces)：规约待开发系统与通讯设施（如，局域网）之间的交互。如果通讯需求包含了系统必须使用的网络类型 (TCP&#x2F;IP. WindowsNT. Novell)，那么有关类型的信息就应包含在SRS中。</p>
+</li>
+</ul>
+<p>		</p>
+<h4 id="设计约束需求："><a href="#设计约束需求：" class="headerlink" title="设计约束需求："></a>设计约束需求：</h4><p>​		设计约束<strong>限制了系统或系统构件</strong>的设计方案。就约束的本身而言。对其进行权衡或调整是相当困难的，甚至是不可能的。<u>它们必须予以满足</u>。这一性质是与其它需求的最主要差别。为了满足功能、性能和其它需求，许多设计约束将对软件项目规划、所需要的附加成本和工作产生直接影响。例如：</p>
+<ul>
+<li>系统必须用C++或其他面向对象语方编写。系统用户接口需要菜单……</li>
+</ul>
+<h4 id="质量属性："><a href="#质量属性：" class="headerlink" title="质量属性："></a>质量属性：</h4><p>​		规约了软件产品必须具有的性质是否达到质量方面一个所期望的水平</p>
+<p>​		例如：</p>
+<p>​			可靠性				软件系统在指定环境中没有失败而正常运行的概率。</p>
+<p>​			存活性				当系统的某一部分系统不能运行时，该软件维续运行或支持关键功能的可能性。</p>
+<p>​			可维护性			发現和改正一个软件故障或对特定的花明进行修改所要求的平均工作。</p>
+<p>​			用户友好性 	   学习和使用一个软件系统的容易程度。</p>
+<p>​			安全性				在一个预定的时间内，使软件系统安全的可能性。</p>
+<p>​			可移植性			软件系统运行的平台类型。</p>
+<h3 id="3-4需求发现"><a href="#3-4需求发现" class="headerlink" title="3.4需求发现"></a>3.4需求发现</h3><p>​	需求是怎么来的？</p>
+<h4 id="自悟-Introspection"><a href="#自悟-Introspection" class="headerlink" title="自悟(Introspection)"></a>自悟(Introspection)</h4><p>​	需求人员把自己作为系统的最终用户，审视该系统并提出问題：“如果是我使用这一系统，则我需要…”</p>
+<h5 id="适用条件："><a href="#适用条件：" class="headerlink" title="适用条件："></a>适用条件：</h5><p>​		需求工程师不能直接与用户进行交流，自悟似乎是一种比较有吸引力的方法，可能确实是必须的。</p>
+<h5 id="成功条件："><a href="#成功条件：" class="headerlink" title="成功条件："></a>成功条件：</h5><p>​		若使自悟是成功的，需求人员必须具有比最终用户还要多的应用领域和过程方面的知识，并具有良好的想象能力。</p>
+<h4 id="交谈-Individual-interviews"><a href="#交谈-Individual-interviews" class="headerlink" title="交谈(Individual interviews)"></a>交谈(Individual interviews)</h4><p>为了确定系统应该提供的功能，需求人员通过提出问题，用户回答，直接询问用户想要的是一个什么样的系统。</p>
+<h5 id="成功条件：-1"><a href="#成功条件：-1" class="headerlink" title="成功条件："></a>成功条件：</h5><p>交谈通常是一种比自悟更好的技术。这种途径成功与否依赖于：</p>
+<p>一一需求人员是否具有“<u>正确提出问题</u>的的能力，</p>
+<p>一一回答人员是否具有“<u>揭示需求本意</u>”的能力。</p>
+<p>在在的风险：在交谈期间需求可能不断增长，或是以前没有认识到的合理需求的一种表现，说是“完美蠕行”(Creepingelegance)病症的体现，以至于很难予以控制，可能导致超出项目成本和进度的限制。</p>
+<h5 id="应对措施："><a href="#应对措施：" class="headerlink" title="应对措施："></a>应对措施：</h5><p>项目管理人员和客户管理人员应该定期地对交谈过程的结果进行复車。其中具有挑战的问题是：</p>
+<p>判断：</p>
+<p>一一什么时候对这一增长划界：</p>
+<p>一一什么时候将这一增长通知客户。</p>
+<h4 id="观察-Observation"><a href="#观察-Observation" class="headerlink" title="观察(Observation)"></a>观察(Observation)</h4><p>通过观察用户执行其现行的任务和过程，或通过观察他们如何操作与所期望的新系统有关的现有系统，了解系统运行的环境，特别是了解要建的新系统与现存系统、过程以及工作方法之间必须进行的交互。尽管了解的这些信息可以通过交谈获取，但“第一手材料”一般总是能够比较好的符合现实的。</p>
+<h5 id="存在的风险："><a href="#存在的风险：" class="headerlink" title="存在的风险："></a>存在的风险：</h5><p>一一客户可能抵触这一观察。其原因是他们认为开发者打扰了他们的正常业务。</p>
+<p>一一客户还可能认为开发者在签约之前，就已经熟悉了他们的业务。</p>
+<h4 id="小组会-Group-session"><a href="#小组会-Group-session" class="headerlink" title="小组会(Group session)"></a>小组会(Group session)</h4><p>举行客户和开发人员的联席会议，与客户组织的一些代表共同开发需求。其中：</p>
+<p>一通常是由<u>开发组织的一个代表作为首席需求工程师或软件工程项目经理</u>，主持这一会议。但还可以采用其它形式，这依赖于其应用领城和主持人的能力。主持人的作用主要是掌握会议的进程。</p>
+<p>一必须仔细地选择该小组的成员，不仅要考虑他们对现存的和未来运行环境的理解程度，还要考虑他们的人品。</p>
+<h4 id="提炼-Extraction"><a href="#提炼-Extraction" class="headerlink" title="提炼(Extraction)"></a>提炼(Extraction)</h4><p>复审技术文档（例如，有关需要的陈达，功能和性能目标的陈述，系统规约接口标准，硬件设计文档以及ConOps文档），并提出相关的信息。</p>
+<h5 id="适用条件：-1"><a href="#适用条件：-1" class="headerlink" title="适用条件："></a>适用条件：</h5><p>提炼方法是针对<u><strong>己经有了部分需求文档的情况</strong></u>。依据产品的本来情况，可能有很多文档需要复审，以确定其中是否包含相关联的信息。在有的情况，也可能只有少数文档需要复审。</p>
+<p>在许多项目中，在任何交谈、观察、小组会或自悟之前，应该对该项目的背景文档进行复审，还应对系统规约进行复审，同时了解相关的标准和政策。</p>
+<h4 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h4><ul>
+<li>在任意特定的环境中，每项技术都有其自己的优点和不足。在实施上述任何一项技术时，都可以辅以其他</li>
+</ul>
+<p>方法，例如原型构造，在举行小组会时可以使用原型，方便人员之间的交流。</p>
+<ul>
+<li><p>依据需求工程人员的技能和产品、合同的实际情况，往往需要“组合”地使用这些技术来开发初始需求。</p>
+</li>
+<li><p>执行需求发现这项活动的人，其技能水平将对这项活动的成功具有重大的影响。</p>
+</li>
+<li><p>大型复杂项目和一些有能力的组织，在开发需求文档时，往往使用系统化的需求获取、分析技术和工具。</p>
+</li>
+</ul>
+<p>一些方法提供了 系统化、自动化的功能，并可逐一验证单一需求所具有的五个性质，验证需求规约是否具</p>
+<p>有四个性质。</p>
+<h3 id="3-5需求规约-SRS"><a href="#3-5需求规约-SRS" class="headerlink" title="3.5需求规约(SRS)"></a>3.5需求规约(SRS)</h3><h4 id="概念"><a href="#概念" class="headerlink" title="概念:"></a>概念:</h4><p>一个需求规约是一个软件项&#x2F;产品&#x2F;系统所有需求陈述的正式文档，是一个软件产品&#x2F; 系统的概念模型。</p>
+<h4 id="基本性质"><a href="#基本性质" class="headerlink" title="基本性质:"></a>基本性质:</h4><p>一般来说，SRS应必须具有以下4个性质：</p>
+<ul>
+<li><p>重要性和稳定性程度 (Banlked for importaance and stability).例如：基本需求、可送的需求和期望的需求。</p>
+</li>
+<li><p>可修改的 (Modifiable)：在不过多地影响其它需求的前提下，可以容易地修改一个单一需求.</p>
+</li>
+<li><p>完整的(Couplete)：没有被遗漏的需求.</p>
+</li>
+<li><p>一致的 (Consistent)：不存在互斥的需求.</p>
+</li>
+</ul>
+<h4 id="格式"><a href="#格式" class="headerlink" title="格式:"></a>格式:</h4><p>引言……总体描述……特定需求……</p>
+<h3 id="3-6需求规约的作用"><a href="#3-6需求规约的作用" class="headerlink" title="3.6需求规约的作用"></a>3.6需求规约的作用</h3><p>第一，是最重要的，作为软件开发组织和用户之间一份事实上的技术合同书；是产品功能及其环境的体现。</p>
+<p>第二，对于项目的其余大多数工作，它是一个管理控制点。</p>
+<p>第三，对于产品的设计，它是一个正式的、受控的起始点。</p>
+<p>第四，是创建产品验收测试计划和用户指南的基础，即基于需求规约一般还会产生另外两个文档——<strong>初始</strong></p>
+<p><strong>测试计划</strong>和<strong>用户系统操作描述</strong>。</p>
+<h3 id="3-7项目的需求及需求规约"><a href="#3-7项目的需求及需求规约" class="headerlink" title="3.7项目的需求及需求规约"></a>3.7项目的需求及需求规约</h3><p>项目需求是客户和开发者之间有关技术合同-产品&#x2F;系统需求的理解，应记录在工作陈述SOW中或其他某一项目文档（例如，项目管理计划）中。</p>
+<p>即<strong>需求规约</strong>(SRS)应只关注产品需求，即：</p>
+<p>​	产品&#x2F;系统需求一“交付给客户的产品是什么”</p>
+<p><strong>项目的需求</strong>(SOW)应关注项目工作与管理，即：</p>
+<p>​	项目需求-“开发组要做的是什么”</p>
+<h2 id="chapter4-结构化分析方法"><a href="#chapter4-结构化分析方法" class="headerlink" title="chapter4 结构化分析方法"></a>chapter4 结构化分析方法</h2><h3 id="结构化分析："><a href="#结构化分析：" class="headerlink" title="结构化分析："></a>结构化分析：</h3><p>​	需求分析的目标<br>​	对需求陈述进行分析，解决其中的歧义、不一致等问题以系统化的形式表达用户的需求，即给出问题的形式化或半形式化的描述(称为系统的概念模型，或系统的需求规约或需求规格说明)。作为开发人员和客户间技术契约的基础，并作为而后开发活动的一个基本输入。</p>
+<p>2实现软件需求分析的目标对方法学的需求</p>
+<ul>
+<li>**提供一组术语(符号)**，指导需求抽象中需要关注的主要方面，并用于表达分析中所使用的信息。这些术语形成一个特定的抽象层，即需求层。</li>
+<li>依据这些术语所形成的“空间”，<strong>给出表达模型的工具</strong>,支持表达系统功能形态。</li>
+<li><strong>给出过程指导</strong>，以支持系统化地使用相关信息建造系统模型。</li>
+</ul>
+<p>基本术语：</p>
+<p>模型表达工具</p>
+<p>​	数据流图：</p>
+<p>​	数据字典：定义数据流和数据存储</p>
+<p>​	加工小说明：</p>
+<ul>
+<li>结构化自然语言</li>
+<li>判定表 </li>
+<li>判定树</li>
+</ul>
+<h3 id="结构化方法："><a href="#结构化方法：" class="headerlink" title="结构化方法："></a>结构化方法：</h3><h4 id="结构化分析方法："><a href="#结构化分析方法：" class="headerlink" title="结构化分析方法："></a>结构化分析方法：</h4><p>​		</p>
+<h4 id="结构化设计方法"><a href="#结构化设计方法" class="headerlink" title="结构化设计方法"></a>结构化设计方法</h4><h4 id="结构化程序设计方法"><a href="#结构化程序设计方法" class="headerlink" title="结构化程序设计方法"></a>结构化程序设计方法</h4><h2 id="chapter5"><a href="#chapter5" class="headerlink" title="chapter5"></a>chapter5</h2><h2 id="chapter6"><a href="#chapter6" class="headerlink" title="chapter6"></a>chapter6</h2><h2 id="chapter7"><a href="#chapter7" class="headerlink" title="chapter7"></a>chapter7</h2><h2 id="chapter8-软件测试"><a href="#chapter8-软件测试" class="headerlink" title="chapter8 软件测试"></a>chapter8 软件测试</h2><h2 id="chapter9-软件项目管理"><a href="#chapter9-软件项目管理" class="headerlink" title="chapter9 软件项目管理"></a>chapter9 软件项目管理</h2><h2 id="Chapter10-软件开发工具与环境"><a href="#Chapter10-软件开发工具与环境" class="headerlink" title="Chapter10 软件开发工具与环境"></a>Chapter10 软件开发工具与环境</h2></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="https://Tangjiayang.github.io">donn</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://tangjiayang.github.io/2023/06/07/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/">https://tangjiayang.github.io/2023/06/07/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/">软件工程</a></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> Donate</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" src="/img/wechat.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/img/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2023/06/02/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="操作系统"><img class="cover" src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">操作系统</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div id="lv-container" data-id="city" data-uid="MTAyMC81ODUzNy8zNTAwMA=="></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/./img/bg.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">donn</div><div class="author-info__description">欢迎访问donn的博客!</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">11</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">10</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">7</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Tangjiayang"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Tangjiayang" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:xxxxxx@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">小站成立于2023-5-27！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B"><span class="toc-text">软件工程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Chapter1-Introduction"><span class="toc-text">Chapter1 Introduction</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%AD%A6%E7%A7%91%E4%BA%A7%E7%94%9F%E7%9A%84%E8%83%8C%E6%99%AF%EF%BC%9A"><span class="toc-text">软件工程学科产生的背景：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BD%AF%E4%BB%B6%E5%8D%B1%E6%9C%BA%EF%BC%9A"><span class="toc-text">软件危机：</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BB%8E%E7%BB%93%E6%9E%9C%E6%9D%A5%E7%9C%8B%EF%BC%8C%E8%BD%AF%E4%BB%B6%E5%8D%B1%E6%9C%BA%E4%BD%93%E7%8E%B0%E5%9C%A8%EF%BC%9A"><span class="toc-text">从结果来看，软件危机体现在：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BB%8E%E5%8E%9F%E5%9B%A0%E6%9D%A5%E7%9C%8B%EF%BC%8C%E8%BD%AF%E4%BB%B6%E5%8D%B1%E6%9C%BA%E7%94%B1%E4%BB%A5%E4%B8%8B%E4%B8%A4%E7%82%B9%E5%AF%BC%E8%87%B4%EF%BC%9A"><span class="toc-text">从原因来看，软件危机由以下两点导致：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Frequently-asked-questions-about-software-engineering"><span class="toc-text">Frequently asked questions about software engineering</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A5%BD%E7%9A%84%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%B1%9E%E6%80%A7"><span class="toc-text">好的软件的基本属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BD%AF%E4%BB%B6%E8%BF%87%E7%A8%8B%E2%80%94%E2%80%94%E5%9B%9B%E9%A1%B9%E5%9F%BA%E6%9C%AC%E6%B4%BB%E5%8A%A8"><span class="toc-text">软件过程——四项基本活动</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Chapter2-%E8%BD%AF%E4%BB%B6%E8%BF%87%E7%A8%8B"><span class="toc-text">Chapter2 软件过程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1%E8%BD%AF%E4%BB%B6%E8%BF%87%E7%A8%8B%E6%A8%A1%E5%9E%8B"><span class="toc-text">2.1软件过程模型</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%80%91%E5%B8%83%E6%A8%A1%E5%9E%8B%EF%BC%9A"><span class="toc-text">瀑布模型：</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%80%91%E5%B8%83%E6%A8%A1%E5%9E%8B%E7%9A%84%E4%BC%98%E7%82%B9%EF%BC%9A"><span class="toc-text">瀑布模型的优点：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%80%91%E5%B8%83%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%BC%BA%E7%82%B9%EF%BC%9A"><span class="toc-text">瀑布模型的缺点：</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A2%9E%E9%87%8F%E6%A8%A1%E5%9E%8B%EF%BC%9A"><span class="toc-text">增量模型：</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%A2%9E%E9%87%8F%E6%A8%A1%E5%9E%8B%E7%9A%84%E4%BC%98%E7%82%B9%EF%BC%9A"><span class="toc-text">增量模型的优点：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%A2%9E%E9%87%8F%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%BC%BA%E7%82%B9%EF%BC%9A"><span class="toc-text">增量模型的缺点：</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%9B%86%E6%88%90%E5%92%8C%E9%85%8D%E7%BD%AE%EF%BC%9A"><span class="toc-text">集成和配置：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%BC%94%E5%8C%96%E6%A8%A1%E5%9E%8B%EF%BC%9A"><span class="toc-text">演化模型：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%96%B7%E6%B3%89%E6%A8%A1%E5%9E%8B%EF%BC%9A"><span class="toc-text">喷泉模型：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#chapter1-%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%AE%BA"><span class="toc-text">chapter1 软件工程概论</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%AE%9A%E4%B9%89%E5%8F%8A%E7%89%B9%E7%82%B9"><span class="toc-text">1.1 软件的定义及特点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E7%9A%84%E8%B5%B7%E6%BA%90%E5%92%8C%E6%A6%82%E5%BF%B5"><span class="toc-text">1.2 软件工程的起源和概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E7%9A%84%E6%9C%AC%E8%B4%A8%E5%92%8C%E5%9F%BA%E6%9C%AC%E6%89%8B%E6%AE%B5"><span class="toc-text">1.3 软件开发的本质和基本手段</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A1%86%E6%9E%B6"><span class="toc-text">1.4 软件工程框架</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#chapter2-%E8%BD%AF%E4%BB%B6%E8%BF%87%E7%A8%8B"><span class="toc-text">chapter2 软件过程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1%E8%BD%AF%E4%BB%B6%E7%94%9F%E5%AD%98%E5%91%A8%E6%9C%9F%E8%BF%87%E7%A8%8B%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-text">2.1软件生存周期过程的概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2%E8%BD%AF%E4%BB%B6%E7%94%9F%E5%AD%98%E5%91%A8%E6%9C%9F%E8%BF%87%E7%A8%8B%E7%9A%84%E5%88%86%E7%B1%BB"><span class="toc-text">2.2软件生存周期过程的分类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3%E8%BD%AF%E4%BB%B6%E7%94%9F%E5%AD%98%E5%91%A8%E6%9C%9F%E6%A8%A1%E5%9E%8B%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-text">2.3软件生存周期模型的概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4%E5%B8%B8%E8%A7%81%E7%9A%84%E8%BD%AF%E4%BB%B6%E7%94%9F%E5%AD%98%E5%91%A8%E6%9C%9F%E6%A8%A1%E5%9E%8B"><span class="toc-text">2.4常见的软件生存周期模型</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%80%91%E5%B8%83%E6%A8%A1%E5%9E%8B%EF%BC%9A-1"><span class="toc-text">瀑布模型：</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%80%91%E5%B8%83%E6%A8%A1%E5%9E%8B%E7%9A%84%E4%BC%98%E7%82%B9%EF%BC%9A-1"><span class="toc-text">瀑布模型的优点：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%80%91%E5%B8%83%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%BC%BA%E7%82%B9%EF%BC%9A-1"><span class="toc-text">瀑布模型的缺点：</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A2%9E%E9%87%8F%E6%A8%A1%E5%9E%8B%EF%BC%9A-1"><span class="toc-text">增量模型：</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%A2%9E%E9%87%8F%E6%A8%A1%E5%9E%8B%E7%9A%84%E4%BC%98%E7%82%B9%EF%BC%9A-1"><span class="toc-text">增量模型的优点：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%A2%9E%E9%87%8F%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%BC%BA%E7%82%B9%EF%BC%9A-1"><span class="toc-text">增量模型的缺点：</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%BC%94%E5%8C%96%E6%A8%A1%E5%9E%8B%EF%BC%9A-1"><span class="toc-text">演化模型：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%96%B7%E6%B3%89%E6%A8%A1%E5%9E%8B%EF%BC%9A-1"><span class="toc-text">喷泉模型：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#chapter3-%E8%BD%AF%E4%BB%B6%E9%9C%80%E6%B1%82%E4%B8%8E%E8%BD%AF%E4%BB%B6%E9%9C%80%E6%B1%82%E8%A7%84%E7%BA%A6"><span class="toc-text">chapter3 软件需求与软件需求规约</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1%E9%9C%80%E6%B1%82%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="toc-text">3.1需求的作用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2%E9%9C%80%E6%B1%82%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-text">3.2需求的定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3%E9%9C%80%E6%B1%82%E7%9A%84%E5%88%86%E7%B1%BB"><span class="toc-text">3.3需求的分类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8A%9F%E8%83%BD%E9%9C%80%E6%B1%82%EF%BC%9A"><span class="toc-text">功能需求：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%A7%E8%83%BD%E9%9C%80%E6%B1%82%EF%BC%9A"><span class="toc-text">性能需求：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%96%E9%83%A8%E6%8E%A5%E5%8F%A3%E9%9C%80%E6%B1%82%EF%BC%9A"><span class="toc-text">外部接口需求：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AE%BE%E8%AE%A1%E7%BA%A6%E6%9D%9F%E9%9C%80%E6%B1%82%EF%BC%9A"><span class="toc-text">设计约束需求：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%B4%A8%E9%87%8F%E5%B1%9E%E6%80%A7%EF%BC%9A"><span class="toc-text">质量属性：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4%E9%9C%80%E6%B1%82%E5%8F%91%E7%8E%B0"><span class="toc-text">3.4需求发现</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E6%82%9F-Introspection"><span class="toc-text">自悟(Introspection)</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%80%82%E7%94%A8%E6%9D%A1%E4%BB%B6%EF%BC%9A"><span class="toc-text">适用条件：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%88%90%E5%8A%9F%E6%9D%A1%E4%BB%B6%EF%BC%9A"><span class="toc-text">成功条件：</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%A4%E8%B0%88-Individual-interviews"><span class="toc-text">交谈(Individual interviews)</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%88%90%E5%8A%9F%E6%9D%A1%E4%BB%B6%EF%BC%9A-1"><span class="toc-text">成功条件：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%BA%94%E5%AF%B9%E6%8E%AA%E6%96%BD%EF%BC%9A"><span class="toc-text">应对措施：</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A7%82%E5%AF%9F-Observation"><span class="toc-text">观察(Observation)</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AD%98%E5%9C%A8%E7%9A%84%E9%A3%8E%E9%99%A9%EF%BC%9A"><span class="toc-text">存在的风险：</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B0%8F%E7%BB%84%E4%BC%9A-Group-session"><span class="toc-text">小组会(Group session)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8F%90%E7%82%BC-Extraction"><span class="toc-text">提炼(Extraction)</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%80%82%E7%94%A8%E6%9D%A1%E4%BB%B6%EF%BC%9A-1"><span class="toc-text">适用条件：</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%BB%E7%BB%93%EF%BC%9A"><span class="toc-text">总结：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5%E9%9C%80%E6%B1%82%E8%A7%84%E7%BA%A6-SRS"><span class="toc-text">3.5需求规约(SRS)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A6%82%E5%BF%B5"><span class="toc-text">概念:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%80%A7%E8%B4%A8"><span class="toc-text">基本性质:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A0%BC%E5%BC%8F"><span class="toc-text">格式:</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-6%E9%9C%80%E6%B1%82%E8%A7%84%E7%BA%A6%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="toc-text">3.6需求规约的作用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-7%E9%A1%B9%E7%9B%AE%E7%9A%84%E9%9C%80%E6%B1%82%E5%8F%8A%E9%9C%80%E6%B1%82%E8%A7%84%E7%BA%A6"><span class="toc-text">3.7项目的需求及需求规约</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#chapter4-%E7%BB%93%E6%9E%84%E5%8C%96%E5%88%86%E6%9E%90%E6%96%B9%E6%B3%95"><span class="toc-text">chapter4 结构化分析方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%93%E6%9E%84%E5%8C%96%E5%88%86%E6%9E%90%EF%BC%9A"><span class="toc-text">结构化分析：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%93%E6%9E%84%E5%8C%96%E6%96%B9%E6%B3%95%EF%BC%9A"><span class="toc-text">结构化方法：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BB%93%E6%9E%84%E5%8C%96%E5%88%86%E6%9E%90%E6%96%B9%E6%B3%95%EF%BC%9A"><span class="toc-text">结构化分析方法：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BB%93%E6%9E%84%E5%8C%96%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95"><span class="toc-text">结构化设计方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BB%93%E6%9E%84%E5%8C%96%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95"><span class="toc-text">结构化程序设计方法</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#chapter5"><span class="toc-text">chapter5</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#chapter6"><span class="toc-text">chapter6</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#chapter7"><span class="toc-text">chapter7</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#chapter8-%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95"><span class="toc-text">chapter8 软件测试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#chapter9-%E8%BD%AF%E4%BB%B6%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86"><span class="toc-text">chapter9 软件项目管理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Chapter10-%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E4%B8%8E%E7%8E%AF%E5%A2%83"><span class="toc-text">Chapter10 软件开发工具与环境</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/06/07/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/" title="软件工程"><img src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="软件工程"/></a><div class="content"><a class="title" href="/2023/06/07/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/" title="软件工程">软件工程</a><time datetime="2023-06-07T06:45:43.000Z" title="Created 2023-06-07 14:45:43">2023-06-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/06/02/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="操作系统"><img src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="操作系统"/></a><div class="content"><a class="title" href="/2023/06/02/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="操作系统">操作系统</a><time datetime="2023-06-02T07:36:55.000Z" title="Created 2023-06-02 15:36:55">2023-06-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/06/02/Redis/" title="Redis"><img src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Redis"/></a><div class="content"><a class="title" href="/2023/06/02/Redis/" title="Redis">Redis</a><time datetime="2023-06-02T07:35:17.000Z" title="Created 2023-06-02 15:35:17">2023-06-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/06/02/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/" title="消息队列"><img src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="消息队列"/></a><div class="content"><a class="title" href="/2023/06/02/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/" title="消息队列">消息队列</a><time datetime="2023-06-02T07:33:40.000Z" title="Created 2023-06-02 15:33:40">2023-06-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/06/02/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" title="设计模式"><img src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="设计模式"/></a><div class="content"><a class="title" href="/2023/06/02/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" title="设计模式">设计模式</a><time datetime="2023-06-02T07:31:53.000Z" title="Created 2023-06-02 15:31:53">2023-06-02</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2023 By donn</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">很高兴认识你🤪</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>function loadLivere () {
+  if (typeof LivereTower === 'object') {
+    window.LivereTower.init()
+  }
+  else {
+    (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+    })(document, 'script');
+  }
+}
+
+if ('Livere' === 'Livere' || !false) {
+  if (false) btf.loadComment(document.getElementById('lv-container'), loadLivere)
+  else loadLivere()
+}
+else {
+  function loadOtherComment () {
+    loadLivere()
+  }
+}</script></div><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Search</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  Loading the Database</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div><hr/><div class="no-result" id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>
