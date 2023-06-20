@@ -65,6 +65,8 @@
           
           <category> 后端开发组件 </category>
           
+          <category> 数据库相关 </category>
+          
       </categories>
       
       
@@ -171,6 +173,10 @@
         <tags>
             
             <tag> SpringCloud </tag>
+            
+            <tag> 微服务 </tag>
+            
+            <tag> 分布式 </tag>
             
         </tags>
       
