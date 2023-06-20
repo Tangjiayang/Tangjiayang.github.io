@@ -65,14 +65,14 @@
           
           <category> 后端开发组件 </category>
           
-          <category> 数据库相关 </category>
-          
       </categories>
       
       
         <tags>
             
             <tag> 后端开发组件 </tag>
+            
+            <tag> 数据库 </tag>
             
         </tags>
       
@@ -221,6 +221,8 @@
         <tags>
             
             <tag> MyBatis-Plus </tag>
+            
+            <tag> 数据库 </tag>
             
         </tags>
       
