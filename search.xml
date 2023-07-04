@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>JavaWeb</title>
+      <link href="/2023/07/04/JavaWeb/"/>
+      <url>/2023/07/04/JavaWeb/</url>
+      
+        <content type="html"><![CDATA[<h1 id="7-Tomcat"><a href="#7-Tomcat" class="headerlink" title="7 Tomcat"></a>7 Tomcat</h1><h2 id="7-1-官方文档"><a href="#7-1-官方文档" class="headerlink" title="7.1 官方文档"></a>7.1 官方文档</h2><h3 id="7-1-1-地址-https-tomcat-apache-org-tomcat-8-0-doc"><a href="#7-1-1-地址-https-tomcat-apache-org-tomcat-8-0-doc" class="headerlink" title="7.1.1 地址**: https://tomcat.apache.org/tomcat-8.0-doc/**"></a><strong>7.1.1</strong> 地址**: <a href="https://tomcat.apache.org/tomcat-8.0-doc/">https://tomcat.apache.org/tomcat-8.0-doc/</a>**</h3><h2 id="7-2-WEB开发介绍"><a href="#7-2-WEB开发介绍" class="headerlink" title="7.2 WEB开发介绍"></a>7.2 WEB开发介绍</h2><ol><li><p>WEB，在英语中 web 表示网&#x2F;网络资源(页面, 图片, css, js)意思，它用于表示 WEB 服务器(主机)供浏览器访问的资源</p></li><li><p>WEB 服务器(主机)上供外界访问的 web 资源分为：</p></li></ol><ul><li>静态web资源（如 html 页面）：指web页面中供人们浏览的数据始终是不变。</li><li>动态web资源，比如 Servlet(java)、PHP 等</li></ul><ol start="3"><li>静态web 资源开发技术</li></ol><ul><li>Html、CSS、js 等</li></ul><ol start="4"><li>常用动态web 资源开发技术：</li></ol><ul><li>Servlet、SpringBoot、SpringvVC、 PHP、ASP.NET 等</li></ul><h2 id="7-3-JavaWeb开发技术栈图"><a href="#7-3-JavaWeb开发技术栈图" class="headerlink" title="7.3 JavaWeb开发技术栈图"></a>7.3 JavaWeb开发技术栈图</h2><p>-一图胜千言</p><p><img src="https://cdn.jsdelivr.net/gh/Tangjiayang/picodemo/img/image-20230704161447451.png" alt="image-20230704161447451"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Web基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaWeb </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>前端知识</title>
       <link href="/2023/07/03/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86/"/>
       <url>/2023/07/03/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86/</url>
