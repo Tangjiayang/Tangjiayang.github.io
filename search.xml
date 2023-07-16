@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Spring</title>
+      <link href="/2023/07/16/Spring/"/>
+      <url>/2023/07/16/Spring/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Spring开发框架 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 后端开发 </tag>
+            
+            <tag> Spring </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>API接口开放平台</title>
       <link href="/2023/07/11/API%E6%8E%A5%E5%8F%A3%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0/"/>
       <url>/2023/07/11/API%E6%8E%A5%E5%8F%A3%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0/</url>
@@ -46,6 +73,8 @@
         <tags>
             
             <tag> JavaWeb </tag>
+            
+            <tag> 后端开发 </tag>
             
         </tags>
       
