@@ -7,7 +7,7 @@
 <meta property="og:locale">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/Tangjiayang/picodemo/img/image-20230727134719639.png">
 <meta property="article:published_time" content="2023-06-02T07:35:17.000Z">
-<meta property="article:modified_time" content="2023-07-31T11:02:56.586Z">
+<meta property="article:modified_time" content="2023-08-02T15:06:20.020Z">
 <meta property="article:author" content="donn">
 <meta property="article:tag" content="后端开发组件">
 <meta property="article:tag" content="数据库">
@@ -59,7 +59,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2023-07-31 19:02:56'
+  postUpdate: '2023-08-02 23:06:20'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -163,7 +163,7 @@
       }
     }
     detectApple()
-    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/./img/bg.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">19</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">21</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">10</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 链接</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/Tangjiayang/picodemo/img/image-20230727134719639.png')"><nav id="nav"><span id="blog-info"><a href="/" title="donn的博客"><span class="site-name">donn的博客</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 链接</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Redis</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2023-06-02T07:35:17.000Z" title="Created 2023-06-02 15:35:17">2023-06-02</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2023-07-31T11:02:56.586Z" title="Updated 2023-07-31 19:02:56">2023-07-31</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91%E7%BB%84%E4%BB%B6/">后端开发组件</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word count:</span><span class="word-count">19.4k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>70min</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Redis"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>本博客参考了韩顺平老师的 Redis 课程讲义！</p>
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/./img/bg.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">19</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">21</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">10</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 链接</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/Tangjiayang/picodemo/img/image-20230727134719639.png')"><nav id="nav"><span id="blog-info"><a href="/" title="donn的博客"><span class="site-name">donn的博客</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 链接</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Redis</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2023-06-02T07:35:17.000Z" title="Created 2023-06-02 15:35:17">2023-06-02</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2023-08-02T15:06:20.020Z" title="Updated 2023-08-02 23:06:20">2023-08-02</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91%E7%BB%84%E4%BB%B6/">后端开发组件</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word count:</span><span class="word-count">19.2k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>68min</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Redis"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>本博客参考了韩顺平老师的 Redis 课程讲义！</p>
 <h1 id="1-Redis-基础知识"><a href="#1-Redis-基础知识" class="headerlink" title="1 Redis 基础知识"></a>1 Redis 基础知识</h1><h2 id="1-1-相关资料"><a href="#1-1-相关资料" class="headerlink" title="1.1 相关资料"></a>1.1 相关资料</h2><h3 id="1-1-1-官网-https-redis-io"><a href="#1-1-1-官网-https-redis-io" class="headerlink" title="1.1.1 官网: https://redis.io"></a>1.1.1 官网: <a target="_blank" rel="noopener" href="https://redis.io/">https://redis.io</a></h3><h3 id="1-1-2下载地址-https-redis-io-docs-getting-started-installation-install-redis-on-mac-os"><a href="#1-1-2下载地址-https-redis-io-docs-getting-started-installation-install-redis-on-mac-os" class="headerlink" title="1.1.2下载地址: https://redis.io/docs/getting-started/installation/install-redis-on-mac-os/"></a>1.1.2下载地址: <a target="_blank" rel="noopener" href="https://redis.io/docs/getting-started/installation/install-redis-on-mac-os/">https://redis.io/docs/getting-started/installation/install-redis-on-mac-os/</a></h3><h2 id="1-2-为什么需要-Redis"><a href="#1-2-为什么需要-Redis" class="headerlink" title="1.2 为什么需要 Redis"></a>1.2 为什么需要 Redis</h2><h3 id="1-2-1-企业需求"><a href="#1-2-1-企业需求" class="headerlink" title="1.2.1 企业需求"></a>1.2.1 企业需求</h3><ul>
 <li>高并发</li>
 <li>高可用</li>
@@ -1217,7 +1217,7 @@
 <h2 id="13-4-一主二仆"><a href="#13-4-一主二仆" class="headerlink" title="13.4 一主二仆"></a>13.4 一主二仆</h2><p>1、 如果从服务器 down 了, 重新启动, 仍然可以获取 Master 的最新数据</p>
 <p>2、如果主服务器 down 了, <u>从服务器并不会抢占为主服务器</u>, 当主服务器恢复后, 从服务器仍然指向原来的主服务器.</p>
 <h2 id="13-5-薪火相传"><a href="#13-5-薪火相传" class="headerlink" title="13.5 薪火相传"></a>13.5 薪火相传</h2><p>1、 示意图</p>
-<img src="/Users/donn/Library/Application Support/typora-user-images/image-20230731082350913.png" alt="image-20230731082350913" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/Tangjiayang/picodemo/img/image-20230731082350913.png" alt="image-20230731082350913" style="zoom:50%;" />
 
 
 
@@ -1233,7 +1233,7 @@
 <h2 id="13-6-反客为主"><a href="#13-6-反客为主" class="headerlink" title="13.6 反客为主"></a>13.6 反客为主</h2><p>1、 在薪火相传的结构下, 当一个 master 宕机后, <u>指向 Master 的 slave 可以升为 master, 其后面的 slave 不用做任何修改</u></p>
 <p>2、用 slaveof no one 将从机变为主机 (老韩说明: 后面可以使用哨兵模式, 自动完成切换.)</p>
 <h2 id="13-7-哨兵模式-sentinel"><a href="#13-7-哨兵模式-sentinel" class="headerlink" title="13.7 哨兵模式(sentinel)"></a>13.7 哨兵模式(sentinel)</h2><h3 id="13-7-1-实例演示"><a href="#13-7-1-实例演示" class="headerlink" title="13.7.1 实例演示"></a>13.7.1 实例演示</h3><p>1、 工作示意图</p>
-<img src="/Users/donn/Library/Application Support/typora-user-images/image-20230731083436662.png" alt="image-20230731083436662" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/Tangjiayang/picodemo/img/image-20230731083436662.png" alt="image-20230731083436662" style="zoom:50%;" />
 
 <p>2、哨兵模式(如图): **<u>反客为主的自动版</u>**，能够后台监控主机是否故障，如果故障了根据投票数自动将从库转换为主库</p>
 <p>3、老韩实验</p>
@@ -1244,11 +1244,11 @@
 <p>​			<strong>redis_master</strong> 为监控对象起的服务器名称</p>
 <p>​			<strong>1</strong> 表示至少有多少个哨兵同意迁移的数量, 这里我配置1 表示只要有1个哨兵同意迁移就可以切换</p>
 <p>​		3) 启动哨兵, 注意看哨兵的端口是 26379</p>
-<p>![image-20230731084427183](&#x2F;Users&#x2F;donn&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20230731084427183.png)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Tangjiayang/picodemo/img/image-20230731084427183.png" alt="image-20230731084427183"></p>
 <p>​		4) 当主机挂掉，从机选举中产生新的主机</p>
 <p>​		5) <strong><u>如果原来的主机重启, 会自动成为从机</u></strong></p>
 <h3 id="13-7-2-注意事项和细节"><a href="#13-7-2-注意事项和细节" class="headerlink" title="13.7.2 注意事项和细节"></a>13.7.2 注意事项和细节</h3><p>1、 在哨兵模式下， 主机 down 后的执行流程分析</p>
-<p>![image-20230731084948786](&#x2F;Users&#x2F;donn&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20230731084948786.png)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Tangjiayang/picodemo/img/image-20230731084948786.png" alt="image-20230731084948786"></p>
 <p>2、解读上图 - 哨兵如何在从机中, 推选新的 Master 主机, 选择的条件依次为:</p>
 <ol>
 <li><strong>优先级</strong>在 redis.conf 中默认：replica-priority 100，值越小优先级越高</li>
@@ -1261,7 +1261,7 @@
 <li><strong>并发</strong>写操作， redis 如何分摊？</li>
 <li>主从模式，薪火相传模式，<u>主机宕机，会导致 ip 地址发生变化，应用程序中配置需要修改对应的主机地址、端口等信息</u></li>
 </ul>
-<h3 id="2、传统解决方案-代理主机来解决"><a href="#2、传统解决方案-代理主机来解决" class="headerlink" title="2、传统解决方案-代理主机来解决"></a>2、传统解决方案-代理主机来解决</h3><p>![image-20230731090153302](&#x2F;Users&#x2F;donn&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20230731090153302.png)</p>
+<h3 id="2、传统解决方案-代理主机来解决"><a href="#2、传统解决方案-代理主机来解决" class="headerlink" title="2、传统解决方案-代理主机来解决"></a>2、传统解决方案-代理主机来解决</h3><p><img src="https://cdn.jsdelivr.net/gh/Tangjiayang/picodemo/img/image-20230731090153302.png" alt="image-20230731090153302"></p>
 <p>解读上图</p>
 <ol>
 <li><p>客户端请求先到代理服务器</p>
@@ -1273,7 +1273,7 @@
 <li><p>这种方案的缺点是: <u>成本高，维护困难, 如果是一主多从, 成本就会更高</u></p>
 </li>
 </ol>
-<h3 id="3、redis3-0-提供解决方案-无中心化集群配置"><a href="#3、redis3-0-提供解决方案-无中心化集群配置" class="headerlink" title="3、redis3.0 提供解决方案-无中心化集群配置"></a>3、redis3.0 提供解决方案-无中心化集群配置</h3><p>![image-20230731090351617](&#x2F;Users&#x2F;donn&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20230731090351617.png)</p>
+<h3 id="3、redis3-0-提供解决方案-无中心化集群配置"><a href="#3、redis3-0-提供解决方案-无中心化集群配置" class="headerlink" title="3、redis3.0 提供解决方案-无中心化集群配置"></a>3、redis3.0 提供解决方案-无中心化集群配置</h3><p><img src="https://cdn.jsdelivr.net/gh/Tangjiayang/picodemo/img/image-20230731090351617.png" alt="image-20230731090351617"></p>
 <p>解读上图</p>
 <pre><code>1) 各个 Redis 服务仍然采用主从结构
 2) 各个 Redis 服务是连通的, **任何一台服务器, 都可以作为请求入口**
@@ -1290,9 +1290,9 @@
 <h3 id="实现："><a href="#实现：" class="headerlink" title="实现："></a>实现：</h3><h4 id="1、修改主服务的conf文件中的配置："><a href="#1、修改主服务的conf文件中的配置：" class="headerlink" title="1、修改主服务的conf文件中的配置："></a>1、修改主服务的conf文件中的配置：</h4><p>​	cluster-enabled yes 打开集群模式</p>
 <p>​	cluster-config-file nodes-6379.conf </p>
 <p>​	设定节点配置文件名cluster-node-timeout 15000 设定节点失联时间，超过该时间（毫秒），集群自动进行主从切换</p>
-<h4 id="2、启动服务"><a href="#2、启动服务" class="headerlink" title="2、启动服务"></a>2、启动服务</h4><p>![image-20230731093504555](&#x2F;Users&#x2F;donn&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20230731093504555.png)</p>
-<p>![image-20230731093522619](&#x2F;Users&#x2F;donn&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20230731093522619.png)</p>
-<h4 id="3、将六个节点合成一个集群"><a href="#3、将六个节点合成一个集群" class="headerlink" title="3、将六个节点合成一个集群"></a>3、将六个节点合成一个集群</h4><p>![image-20230731093608968](&#x2F;Users&#x2F;donn&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20230731093608968.png)</p>
+<h4 id="2、启动服务"><a href="#2、启动服务" class="headerlink" title="2、启动服务"></a>2、启动服务</h4><p><img src="https://cdn.jsdelivr.net/gh/Tangjiayang/picodemo/img/image-20230731093504555.png" alt="image-20230731093504555"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Tangjiayang/picodemo/img/image-20230731093522619.png" alt="image-20230731093522619"></p>
+<h4 id="3、将六个节点合成一个集群"><a href="#3、将六个节点合成一个集群" class="headerlink" title="3、将六个节点合成一个集群"></a>3、将六个节点合成一个集群</h4><p><img src="https://cdn.jsdelivr.net/gh/Tangjiayang/picodemo/img/image-20230731093608968.png" alt="image-20230731093608968"></p>
 <p>将六个节点合成一个集群 的指令:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">redis-cli --cluster create --cluster-replicas 1 192.168.198.130:6379 192.168.198.130:6380 192.168.198.130:6381 192.168.198.130:6389192.168.198.130:6390 192.168.198.130:6391</span><br></pre></td></tr></table></figure>
 
@@ -1312,11 +1312,11 @@
 <p>3、 分配原则： <u><strong>尽量保证主服务器和从服务器各自运行在不同的 IP 地址(机器), 防止机器故障导致主从机制失效, 高可用性得不到保障</strong></u></p>
 <h2 id="14-4-Redis-集群使用"><a href="#14-4-Redis-集群使用" class="headerlink" title="14.4 Redis 集群使用"></a>14.4 Redis 集群使用</h2><p>1、 什么是 slots</p>
 <p>1）Redis 集群启动后, 你会看到如下提示</p>
-<p>![image-20230731094714287](&#x2F;Users&#x2F;donn&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20230731094714287.png)</p>
-<p>![image-20230731094732477](&#x2F;Users&#x2F;donn&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20230731094732477.png)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Tangjiayang/picodemo/img/image-20230731094714287.png" alt="image-20230731094714287"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Tangjiayang/picodemo/img/image-20230731094732477.png" alt="image-20230731094732477"></p>
 <p>2）一个 Redis 集群包含 16384 个插槽（hash slot），编号从 0-16383, <u>Reids 中的每个键都属于这 16384 个插槽的其中一个</u></p>
 <p>3）集群使用公式 CRC16(key) % 16384 来计算键 key 属于哪个槽， 其中 CRC16(key) 语句用于计算键 key 的 CRC16 校验和</p>
-<p>![image-20230731094808015](&#x2F;Users&#x2F;donn&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20230731094808015.png)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Tangjiayang/picodemo/img/image-20230731094808015.png" alt="image-20230731094808015"></p>
 <p>4)<u><strong>集群中的每个节点负责处理一部分插槽</strong></u>。 举个例子， 如果一个集群可以有主节点， 其中：</p>
 <ul>
 <li>节点 A 负责处理 0 号至 5460 号插槽</li>
@@ -1327,19 +1327,19 @@
 <p>1）在 redis 每次录入、查询键值，redis 都会计算出该 key 应该送往的插槽，<u>如果不是该客户端对应服务器的插槽，redis 会告知应前往的 redis 实例地址和端口</u>。	(因为你可以在集群的任意端启用redis服务)</p>
 <p>2）redis-cli 客户端提供了 –c 参数实现<strong>自动重定向</strong>。</p>
 <p>3）如 redis-cli -c –p 6379 登入后，再录入、查询键值对可以自动重定向</p>
-<img src="/Users/donn/Library/Application Support/typora-user-images/image-20230731095430316.png" alt="image-20230731095430316" style="zoom: 50%;" />
+<img src="https://cdn.jsdelivr.net/gh/Tangjiayang/picodemo/img/image-20230731095430316.png" alt="image-20230731095430316" style="zoom: 50%;" />
 
 <p>4）**<u>不在一个 slot 下的键值</u>，是不能使用 mget,mset 等多键操作**</p>
-<img src="/Users/donn/Library/Application Support/typora-user-images/image-20230731095522774.png" alt="image-20230731095522774" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/Tangjiayang/picodemo/img/image-20230731095522774.png" alt="image-20230731095522774" style="zoom:50%;" />
 
 <p>5）<strong>可以通过{}来定义组的概念，从而<u>使 key 中{}内相同内容的键值对放到一个 slot 中</u>去</strong>，可以对一个组的数据进行mget等多键操作</p>
-<img src="/Users/donn/Library/Application Support/typora-user-images/image-20230731095552328.png" alt="image-20230731095552328" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/Tangjiayang/picodemo/img/image-20230731095552328.png" alt="image-20230731095552328" style="zoom:50%;" />
 
 <p>3、<u>查询集群中的值</u></p>
 <p>1）指令: CLUSTER KEYSLOT <key> <strong>返回 key 对应的 slot 值</strong></p>
 <p>2）指令: CLUSTER COUNTKEYSINSLOT <slot> <strong>返回 slot 有多少个 key</strong></p>
 <p>3）指令: CLUSTER GETKEYSINSLOT <slot><count> <strong>返回 count 个 slot 槽中的键</strong></p>
-<p> ![image-20230731100125306](&#x2F;Users&#x2F;donn&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20230731100125306.png)</p>
+<p> <img src="https://cdn.jsdelivr.net/gh/Tangjiayang/picodemo/img/image-20230731100125306.png" alt="image-20230731100125306"></p>
 <h2 id="14-5-Redis-集群故障恢复"><a href="#14-5-Redis-集群故障恢复" class="headerlink" title="14.5 Redis 集群故障恢复"></a>14.5 Redis 集群故障恢复</h2><p>1、 如果主节点下线, <u>从节点会自动升为主节点</u>(注意 15 秒超时, 再观察比较准确)</p>
 <p>—是该主节点的从节点提生成master，而不是其他节点替代这个节点</p>
 <p>2、主节点恢复后，主节点回来变成从机</p>
@@ -1347,7 +1347,7 @@
 <p>​	1）如果某一段插槽的主从都挂掉，而 <strong>cluster-require-full-coverage</strong> 为 yes ，那么 ，整个集群都挂掉</p>
 <p>​	2）如果某一段插槽的主从都挂掉，而 <strong>cluster-require-full-coverage</strong> 为 no , 那么, 只是该插槽数据不能使用，也无法存储</p>
 <p>​	3）redis.conf 中的参数 cluster-require-full-coverage</p>
-<p>![image-20230731100749215](&#x2F;Users&#x2F;donn&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20230731100749215.png)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Tangjiayang/picodemo/img/image-20230731100749215.png" alt="image-20230731100749215"></p>
 <h2 id="14-6-集群的-Jedis-开发"><a href="#14-6-集群的-Jedis-开发" class="headerlink" title="14.6 集群的 Jedis 开发"></a>14.6 集群的 Jedis 开发</h2><p>1、 即使连接的不是主机， 集群会自动切换主机存储。 主机写， 从机读。</p>
 <p>2、无中心化主从集群。无论从哪台主机写的数据，其他主机上都能读到数据</p>
 <p>3、老韩实验</p>
