@@ -7,7 +7,7 @@
 <meta property="og:locale">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/Tangjiayang/picodemo/img/image-20230727223615031.png">
 <meta property="article:published_time" content="2023-07-27T14:32:58.000Z">
-<meta property="article:modified_time" content="2023-08-09T07:30:23.666Z">
+<meta property="article:modified_time" content="2023-08-10T08:48:45.795Z">
 <meta property="article:author" content="donn">
 <meta property="article:tag" content="数据库">
 <meta name="twitter:card" content="summary">
@@ -58,7 +58,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2023-08-09 15:30:23'
+  postUpdate: '2023-08-10 16:48:45'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -162,7 +162,7 @@
       }
     }
     detectApple()
-    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/./img/bg.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">20</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">22</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">11</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 链接</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/Tangjiayang/picodemo/img/image-20230727223615031.png')"><nav id="nav"><span id="blog-info"><a href="/" title="donn的博客"><span class="site-name">donn的博客</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 链接</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">MySQL原理学习</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2023-07-27T14:32:58.000Z" title="Created 2023-07-27 22:32:58">2023-07-27</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2023-08-09T07:30:23.666Z" title="Updated 2023-08-09 15:30:23">2023-08-09</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3/">数据库相关</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word count:</span><span class="word-count">39.3k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>121min</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="MySQL原理学习"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p><strong><u>MySQL原理——知识架构</u></strong></p>
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/./img/bg.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">20</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">22</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">11</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 链接</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/Tangjiayang/picodemo/img/image-20230727223615031.png')"><nav id="nav"><span id="blog-info"><a href="/" title="donn的博客"><span class="site-name">donn的博客</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 链接</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">MySQL原理学习</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2023-07-27T14:32:58.000Z" title="Created 2023-07-27 22:32:58">2023-07-27</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2023-08-10T08:48:45.795Z" title="Updated 2023-08-10 16:48:45">2023-08-10</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3/">数据库相关</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word count:</span><span class="word-count">39.5k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>122min</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="MySQL原理学习"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p><strong><u>MySQL原理——知识架构</u></strong></p>
 <p><img src="https://cdn.jsdelivr.net/gh/Tangjiayang/picodemo/img/image-20230728105935995.png" alt="image-20230728105935995"></p>
 <h1 id="架构"><a href="#架构" class="headerlink" title="架构"></a>架构</h1><h3 id="MySQL架构"><a href="#MySQL架构" class="headerlink" title="MySQL架构"></a>MySQL架构</h3><img src="https://cdn.jsdelivr.net/gh/Tangjiayang/picodemo/img/image-20230728111959688.png" alt="image-20230728111959688" style="zoom: 67%;" />
 
@@ -402,7 +402,7 @@
 </li>
 <li><p>「变长字段长度列表」中的信息之所以要逆序存放，是因为这样可以<strong>使得位置靠前的记录的真实数据和数据对应的字段长度信息可以同时在一个 CPU Cache Line 中，这样就可以提高 CPU Cache 的命中率</strong>。</p>
 </li>
-<li><p>🧠<u><em>通俗易懂，但不准确的说明</em></u>： 你初始指向的是中间的位置，往左一格更容易读到字段长度信息，往右一格能够读到该字段的真实数据信息(从中间向两边扩张地读取，更容易实现现在同义词指针移动，读到同一字段的数据 &amp; 长度信息)</p>
+<li><p>🧠<u><em>通俗易懂，但不准确的说明</em></u>： 你初始指向的是中间的位置，往左一格更容易读到字段长度信息，往右一格能够读到该字段的真实数据信息(从中间向两边扩张地读取，更容易实现现在同一次指针移动，读到同一字段的数据 &amp; 长度信息)</p>
 </li>
 </ol>
 <p>同样的道理， NULL 值列表的信息也需要逆序存放。</p>
@@ -422,13 +422,13 @@
 <li><strong>next_record</strong>：下一条记录的位置。从这里可以知道，记录与记录之间是通过链表组织的。在前面我也提到了，指向的是下一条记录的「记录头信息」和「真实数据」之间的位置，这样的好处是向左读就是记录头信息，向右读就是真实数据，比较方便。</li>
 <li><strong>record_type</strong>：表示当前记录的类型，0表示普通记录，1表示B+树非叶子节点记录，2表示最小记录，3表示最大记录</li>
 </ul>
-<h6 id="4-记录的真实数据"><a href="#4-记录的真实数据" class="headerlink" title="4. 记录的真实数据"></a>4. 记录的真实数据</h6><p>​	记录真实数据部分除了我们定义的字段，还有三个隐藏字段，分别为：<strong>row_id、trx_id、roll_pointer</strong>，我们来看下这三个字段是什么。</p>
+<h6 id="4-记录的真实数据"><a href="#4-记录的真实数据" class="headerlink" title="4. 记录的真实数据"></a>4. 记录的真实数据</h6><p>​	记录真实数据部分除了我们定义的字段，还有**<u>三个隐藏字段</u><strong>，分别为：</strong>row_id、trx_id、roll_pointer**，我们来看下这三个字段是什么。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/Tangjiayang/picodemo/img/image-20230730152307044.png" alt="image-20230730152307044"></p>
 <ul>
 <li>row_id</li>
 </ul>
 <p>​	如果我们建表的时候指定了主键或者唯一约束列，那么就没有 row_id 隐藏字段了。如果既没有指定主键，又没有唯一约束，那么 InnoDB 就会为记录添加 row_id 隐藏字段。row_id<strong>不是必需的</strong>，占用 6 个字节。</p>
-<p>​	没有主键或唯一约束列时，会自动帮你生成一个隐藏主键(疑问🤔️：用于聚簇索引？)</p>
+<p>​	没有主键或唯一约束列时，会自动帮你生成一个隐藏主键(用于聚簇索引！)</p>
 <ul>
 <li>trx_id</li>
 </ul>
@@ -436,7 +436,7 @@
 <ul>
 <li>roll_pointer</li>
 </ul>
-<p>​	<strong>这条记录上一个版本的指针</strong>。roll_pointer 是<strong>必需的</strong>，占用 7 个字节。</p>
+<p>​	<strong>这条记录上一个版本的指针</strong>。roll_pointer 是<strong>必需的</strong>，占用 7 个字节。——-后面我们可以知道，这用于MVCC的实现</p>
 <h4 id="varchar-n-中-n-最大取值为多少？"><a href="#varchar-n-中-n-最大取值为多少？" class="headerlink" title="varchar(n) 中 n 最大取值为多少？"></a>varchar(n) 中 n 最大取值为多少？</h4><p>我们要清楚一点，<strong>MySQL 规定除了 TEXT、BLOBs 这种大对象类型之外，其他所有的列（不包括隐藏列和记录头信息）占用的字节长度<u>加起来</u>不能超过 65535 个字节</strong>。</p>
 <p>也就是说，一行记录除了 TEXT、BLOBs 类型的列，限制最大为 65535 字节，<u>注意是一行的总长度</u>，不是一列。</p>
 <p>知道了这个前提之后，我们再来看看这个问题：「varchar(n) 中 n 最大取值为多少？」</p>
@@ -796,11 +796,13 @@
 <p>⚠️有一个比较特殊的查询条件：where a &#x3D; 1 and c &#x3D; 3 ，符合最左匹配吗？</p>
 <p>这种其实严格意义上来说是属于索引截断，不同版本处理方式也不一样。</p>
 <ul>
-<li><p>MySQL 5.5 的话，<u>前面 a 会走索引，在联合索引找到主键值后，开始回表</u>，到主键索引读取数据行，Server 层从存储引擎层获取到数据行后，然后在 Server 层再比对 c 字段的值。</p>
-</li>
-<li><p>从 MySQL 5.6 之后，有一个<strong>索引下推功能</strong>，可以在存储引擎层进行索引遍历过程中，对索引中包含的字段先做判断，直接过滤掉不满足条件的记录，再返还给 Server 层，从而减少回表次数。</p>
-</li>
+<li>MySQL 5.5 的话，<u>前面 a 会走索引，在联合索引找到主键值后，开始回表</u>，到主键索引读取数据行，Server 层从存储引擎层获取到数据行后，然后在 Server 层再比对 c 字段的值。</li>
+<li>从 MySQL 5.6 之后，有一个<strong>索引下推功能</strong>，可以在存储引擎层进行索引遍历过程中，对索引中包含的字段先做判断，直接过滤掉不满足条件的记录，再返还给 Server 层，从而减少回表次数。</li>
 </ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">重要细节！！！！！</span><br><span class="line"></span><br><span class="line">⚠️：范围查询后的字段无法使用索引！！！</span><br><span class="line"></span><br><span class="line">🥩：如果查询条件中有多个以 and 连接的 联合索引声明的列的查询条件，那么会按找联合索引的顺序对查询条件进行处理</span><br><span class="line"></span><br><span class="line">例：对(c,b,a)简历联合索引，那么在查询条件为：where a=1 and b=2 and c=3时，会先筛选c=3 再 b=2 最后 a=1</span><br><span class="line"></span><br><span class="line">⚠️注意：如果条件为：where a=1 and b=2 and c&gt;3，先根据c的索引找到c&gt;3的记录，但是因为「范围查询后的字段无法使用索引！」，所以a、b此时无法走索引！！！！！</span><br></pre></td></tr></table></figure>
+
+
+
 <h5 id="索引下推："><a href="#索引下推：" class="headerlink" title="索引下推："></a>索引下推：</h5><p>索引下推的大概原理是：截断的字段不会在 Server 层进行条件判断，而是会被下推到「存储引擎层」进行条件判断（因为 c 字段的值是在 <code>(a, b, c)</code> 联合索引里的），然后<u><strong>过滤出符合条件的数据后</strong>再返回给 Server 层</u>。由于在引擎层就过滤掉大量的数据，无需再回表读取数据来进行判断，减少回表次数，从而提升了性能。</p>
 <h4 id="6-WHERE-子句中的-OR"><a href="#6-WHERE-子句中的-OR" class="headerlink" title="6.WHERE 子句中的 OR"></a>6.WHERE 子句中的 OR</h4><p>​	在 WHERE 子句中，如果在 OR 前的条件列是索引列，而在 OR 后的条件列不是索引列，那么索引会失效。</p>
 <p>​	举个例子，比如下面的查询语句，id 是主键，age 是普通列，从执行计划的结果看，是走了全表扫描。</p>
